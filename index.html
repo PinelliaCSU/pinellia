@@ -12,10 +12,10 @@
     <meta name="force-rendering" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#424242" />
-    <meta name="description" content="南淮花酱|MyIndex">
+    <meta name="description" content="pinellia|MyIndex">
     <meta name="keywords" content="Index">
-    <meta name="author" content="南淮花酱">
-    <title>南淮花酱|MyIndex</title>
+    <meta name="author" content="pinellia">
+    <title>pinellia|MyIndex</title>
     <!-- jQuery -->
     <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
     <!-- HarmonyOS Sans -->
@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
     <script type="text/javascript"
         src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
-    </script>
+        </script>
     <!-- Search Box -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -72,7 +72,7 @@
                 <div class="inner three"></div>
             </div>
             <div class="loading-word">
-                <p class="loading-title" id="loading-title">南淮花酱|Index</p>
+                <p class="loading-title" id="loading-title">pinellia|Index</p>
                 <span id="loading-text">Loading......</span>
             </div>
         </div>
@@ -80,18 +80,20 @@
     <section id="section" class="section">
         <!-- 背景图片 -->
         <style type="text/css">
-            body{
-              background: url("img/background1.webp") no-repeat center center fixed;
-                          /*兼容浏览器版本*/
-                          -webkit-background-size: cover;
-                          -o-background-size: cover;                
-                          background-size: cover;
-            } /*背景图*/
-       
-            .test {
-              margin-top: 100px;
+            body {
+                background: url("img/background.jpg") no-repeat center center fixed;
+                /*兼容浏览器版本*/
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
             }
-          </style>
+
+            /*背景图*/
+
+            .test {
+                margin-top: 100px;
+            }
+        </style>
         <!-- 鼠标指针 -->
         <div id="g-pointer-1"></div>
         <div id="g-pointer-2"></div>
@@ -105,7 +107,7 @@
                 <span class="fas fa-search"></span>
             </div>
             <div class="search-data">
-                <input type="text" id="inp" required/>
+                <input type="text" id="inp" required />
                 <div class="line"></div>
                 <label>Type to search...</label>
                 <span class="fas fa-search" id="btn"></span>
@@ -114,36 +116,36 @@
             <script>
                 var oInp = document.getElementById('inp');
                 var oBtn = document.getElementById('btn');
-            
+
                 oBtn.onclick = function () {
                     Search();
                 }
-            
+
                 document.onkeydown = function () {
                     if (event.keyCode == 13) {
                         Search();
                     }
                 }
-            
+
                 function Search() {
                     var url = 'https://cn.bing.com/search?q=' + oInp.value;
-                    window.open(url,'_self');
+                    window.open(url, '_self');
                 }
             </script>
 
             <script>
-                $(".search-btn").click(function(){
-                    $(this).css("display","none");
+                $(".search-btn").click(function () {
+                    $(this).css("display", "none");
                     $(".search-data").fadeIn(500);
                     $(".close-btn").fadeIn(500);
                     $(".search-data .line").addClass("active");
-                    setTimeout(function(){
+                    setTimeout(function () {
                         $("input").focus();
                         $(".search-data label").fadeIn(500);
                         $(".search-data span").fadeIn(500);
                     }, 800);
                 });
-                $(".close-btn").click(function(){
+                $(".close-btn").click(function () {
                     $(".search-btn").fadeIn(800);
                     $(".search-data").fadeOut(500);
                     $(".close-btn").fadeOut(500);
@@ -160,9 +162,9 @@
                         <div class="main-left">
                             <!--Logo-->
                             <div class="main-img">
-                                <img id="logo-img" src="./img/icon/logo.png" alt="img">
+                                <img id="logo-img" src="./img/icon/personback.jpg" alt="img">
                                 <div class="img-title">
-                                    <span class="img-title-big" id="logo-text-1">南淮花酱</span>
+                                    <span class="img-title-big" id="logo-text-1">pinellia</span>
                                     <span class="img-text" id="logo-text-2">.io</span>
                                 </div>
                             </div>
@@ -171,30 +173,23 @@
                                 <div class="des" id="des">
                                     <i class="fa-solid fa-quote-left"></i>
                                     <div class="des-title"><span id="change">Hello&nbsp;World&nbsp;!</span><br /><span
-                                            id="change1">一个不正经的Up  |  +V: hsbupt</span></div>
+                                            id="change1">来自中南大学，大一新生一枚 </span></div>
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
                             </div>
                             <!--社交链接-->
                             <div class="social" id="social">
-                                <a href="https://github.com/hsBUPT" class="link" id="github" style="margin-left: 4px"
-                                    target="_blank">
+                                <a href="https://github.com/PinelliaCSU" class="link" id="github"
+                                    style="margin-left: 4px" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                                <a href="https://wpa.qq.com/msgrd?v=3&uin=2257757362&site=qq&menu=yes" class="link"
-                                    id="qq" target="_blank">
-                                    <i class="fa-brands fa-qq"></i>
-                                </a>
-                                <a href="mailto:2257757362@qq.com" class="link" id="email">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </a>
-                                <a href="https://space.bilibili.com/1410673018" class="link" id="bilibili"
+
+
+                                <a href="https://space.bilibili.com/316707643" class="link" id="bilibili"
                                     target="_blank">
                                     <i class="fa-brands fa-bilibili"></i>
                                 </a>
-                                <a href="https://t.me/BUPT_hs" class="link" id="telegram" target="_blank">
-                                    <i class="fa-brands fa-telegram"></i>
-                                </a>
+
                                 <a id="link-text">通过这里联系我</a>
                             </div>
                         </div>
@@ -217,9 +212,10 @@
                                         </div>
                                         <!--切换音乐结束-->
                                         <div class="hitokoto-all">
-                                            <div class="hitokoto-text"><span id="hitokoto_text">一个不正经的Up</span>
+                                            <div class="hitokoto-text"><span id="hitokoto_text">来自中南大学，大一新生一枚</span>
                                             </div>
-                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">南淮花酱</span>&nbsp;」
+                                            <div class="hitokoto-from">-「&nbsp;<span
+                                                    id="from_text">pinellia</span>&nbsp;」
                                             </div>
                                         </div>
                                     </div>
@@ -228,7 +224,7 @@
                                         <div class="music-all">
                                             <div class="music-button">
                                                 <div id="music-open">音乐列表</div>
-                                                <div id="music-close">回到一言</div>
+                                                <div id="music-close">回到语录</div>
                                             </div>
                                             <div class="music-control">
                                                 <i class="fa-solid fa-backward-step" id="last"></i>
@@ -378,7 +374,7 @@
                     </div>
                     <div class="line">
                         <i class="fa-solid fa-angle-left"></i>
-                        <span class="line-text">杂七杂八</span>
+                        <span class="line-text">四海五洲</span>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                     <!--网站链接-->
@@ -391,16 +387,16 @@
                             </a>
                         </div>
                         <div class="col 2">
-                            <a href="https://tool.oschina.net/highlight" target="_blank">
+                            <a href="https://www.marscode.cn/" target="_blank">
                                 <div class="link-card cards">
-                                    <span class="link-name">Code高亮</span>
+                                    <span class="link-name">豆包</span>
                                 </div>
                             </a>
                         </div>
                         <div class="col">
-                            <a href="https://auth.bupt.edu.cn/" target="_blank">
+                            <a href="https://www.csu.edu.cn/" target="_blank">
                                 <div class="link-card cards">
-                                    <span class="link-name">云平台</span>
+                                    <span class="link-name">I love CSU</span>
                                 </div>
                             </a>
                         </div>
@@ -439,10 +435,10 @@
                         <!--左侧内容-->
                         <div class="box-left">
                             <div class="img-title">
-                                <span class="img-title-big" id="logo-title-other">南淮花酱</span>
+                                <span class="img-title-big" id="logo-title-other">pinellia</span>
                                 <span class="img-text" id="logo-title-other-small">.io</span><br />
                                 <span class="img-text">&nbsp;v&nbsp;1.1</span>
-                                <a href="https://github.com/hsBUPT" target="_blank">
+                                <a href="https://github.com/PinelliaCSU" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
@@ -499,7 +495,7 @@
                                         aria-labelledby="headingTwo" data-bs-parent="#accordion">
                                         <div class="accordion-body">
                                             <div class="upnote">
-						<span class="uptext">
+                                                <span class="uptext">
                                                     <i class="fa-solid fa-circle-plus"></i>&nbsp;加快网页相应速度 By.阿坤
                                                 </span>
                                                 <span class="uptext">
@@ -551,10 +547,11 @@
             <div class="power">Copyright&nbsp;©&nbsp;<span id="power-year">2022</span>
                 <script>
                     document.write(' - ' + (new Date()).getFullYear())
-                </script>&nbsp;<a href="http://www.hsbupt.love/" id="power-text">南淮花酱|Hs</a>&nbsp;&amp;&nbsp;
+                </script>&nbsp;<a href="https://github.com/PinelliaCSU"
+                    id="power-text">pinellia|csu</a>&nbsp;&amp;&nbsp;
                 <!-- 以下信息请不要修改哦 -->
                 Made&nbsp;⚙Modified from&nbsp;<a href="/" target="_blank">imsyy</a>
-				🔒<a href="https://beian.miit.gov.cn/">暂未备案</a>
+                🔒<a href="https://beian.miit.gov.cn/">暂未备案</a>
             </div>
             <!-- 歌词显示 -->
             <div id="lrc"></div>
@@ -579,7 +576,7 @@
     <script type="text/javascript" src="./js/js.cookie.js"></script>
     <script type="text/javascript"
         src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/js/bootstrap.min.js">
-    </script>
+        </script>
 </body>
 
 </html>
