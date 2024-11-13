@@ -81,10 +81,6 @@
         <!-- 背景图片 -->
         <style type="text/css">
             body {
-                background: url("img/background1.webp") no-repeat center center fixed;
-                background: url("img/background2.png") no-repeat center center fixed;
-                background: url("img/background3.jpg") no-repeat center center fixed;
-                background: url("img/background4.jpg") no-repeat center center fixed;
                 background: url("img/background5.png") no-repeat center center fixed;
                 /*兼容浏览器版本*/
                 -webkit-background-size: cover;
@@ -99,26 +95,7 @@
                 margin-top: 100px;
             }
         </style>
-        <script type="text/javascript">
-            $(function () {
-                let index = 0;
-                setInterval(function () {
-                    if (index == $(".section>body").length - 1) {
-                        index = 0;
-                        $(".section>body ").css("opacity", "0");
-                        $(".section>body ").eq(index).css("opacity", "1");
-                    } else {
-                        index++;
-                        $(".section>body ").css("opacity", "0");
-                        $(".section>body ").eq(index).css("opacity", "1");
-                    }
 
-                }, 2000)
-
-
-            })
-
-        </script>
 
         <!-- 鼠标指针 -->
         <div id="g-pointer-1"></div>
